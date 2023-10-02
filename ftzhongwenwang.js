@@ -10,12 +10,12 @@ hostname = *.cloudfront.net
 *******************************/
 var aninzero = JSON.parse($response.body);
 
-baby = {
+aninzero = {
   "paywall": 0,
   "premium": 1,
-  "expire": "4092599349",
+  "expire": "409259934999",
   "standard": 1,
-  "v": 2099,
+  "v": 888888,
   "campaign_code": "",
   "latest_duration": "yearly",
   "addon": 0
