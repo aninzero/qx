@@ -10,15 +10,13 @@ hostname = *.cloudfront.net
 *******************************/
 var aninzero = JSON.parse($response.body);
 
-aninzero = {
-  "paywall": 0,
-  "premium": 1,
-  "expire": "409259934999",
-  "standard": 1,
-  "v": 888888,
-  "campaign_code": "",
-  "latest_duration": "yearly",
-  "addon": 0
-};
+aninzero.paywall = 0;
+aninzero.premium = 1;
+aninzero.expire = "409259934999";
+aninzero.standard = 1;
+aninzero.v = 888888;
+aninzero.campaign_code = "";
+aninzero.latest_duration = "yearly";
+aninzero.addon = 0;
 
-$done({ body: JSON.stringify(aninzero) });
+$done({body: JSON.stringify(aninzero)});
