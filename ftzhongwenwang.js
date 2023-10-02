@@ -3,7 +3,7 @@ FT中文网
 ***********************
 
 [rewrite_local]
-^https:\/\/*\.cloudfront\.net\/index\.php\/jsapi\/paywall url script-response-body https://raw.githubusercontent.com/aninzero/qx/main/ftzhongwenwang.js
+^https:\/\/^[a-zA-Z0-9]+\.cloudfront\.net\/index\.php\/jsapi\/paywall url script-response-body https://raw.githubusercontent.com/aninzero/qx/main/ftzhongwenwang.js
 [mitm] 
 hostname = *.cloudfront.net
 
