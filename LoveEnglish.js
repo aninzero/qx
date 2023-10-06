@@ -18,7 +18,8 @@ hostname = revenuecat-cn.fastools.cn
 *******************************/
 
 var aninzero = JSON.parse($response.body);
-
+delete $request.headers["x-revenuecat-etag"];
+delete $request.headers["X-RevenueCat-ETag"];
     aninzero = {
   "request_date_ms": 1696509937149,
   "request_date": "2023-10-05T12:45:37Z",
