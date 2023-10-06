@@ -22,7 +22,7 @@ hostname = revenuecat-cn.fastools.cn
 const aninzero1 = {};
 const aninzero2 = JSON.parse(typeof $response != "undefined" && $response.body || null);
 
-const name = "default";
+const name = "pro";
 const appid = "igrammer_199_ly_v1";
 
   
