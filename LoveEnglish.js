@@ -19,29 +19,27 @@ hostname = revenuecat-cn.fastools.cn
 *******************************/
 
 
-const aninzero1 = {};
-const aninzero2 = JSON.parse(typeof $response != "undefined" && $response.body || null);
+const a = {};
+const b = JSON.parse(typeof $response != "undefined" && $response.body || null);
 
 const name = "pro";
-const appid = "igrammer_199_ly_v1";
+const appid = "igrammar_199_1y_v1";
 
-  
 if (typeof $response == "undefined") {
   delete $request.headers["x-revenuecat-etag"];
   delete $request.headers["X-RevenueCat-ETag"];
-  chxm1023.headers = $request.headers;
-} else if (aninzero2 && aninzero2.subscriber) {
-  data = {
- "original_purchase_date": "2022-09-09T09:09:09Z",
- "purchase_date": "2022-09-09T09:09:09Z",
- "expires_date": "2099-09-09T09:09:09Z",
- "store" : "app_store",
- "ownership_type": "PURCHASED"
- };
-  aninzero2.subscriber.subscriptions[(appid)] = data
-  aninzero2.subscriber.entitlements[(name)] = JSON.parse(JSON.stringify(data));
-  aninzero2.subscriber.entitlements[(name)].product_identifier = (appid);
-  aninzero1.body = JSON.stringify(aninzero2);
+  a.headers = $request.headers;
+} else if (b && b.subscriber) {
+  b.subscriber.subscriptions = b.subscriber.subscriptions || {};
+  b.subscriber.entitlements = b.subscriber.entitlements || {};
+  const data = {
+	"product_identifier": (appid),
+	"expires_date": "8888-08-08T09:09:09Z",
+	"purchase_date": "2022-09-09T09:09:09Z"
+	};
+  b.subscriber.entitlements[(name)] = (data);
+  b.subscriber.subscriptions[(appid)] = {  ...data,	"original_purchase_date": "2022-09-09T09:09:09Z",	"store": "app_store",	"ownership_type": "PURCHASED"};
+  a.body = JSON.stringify(b);
 }
 
-$done(aninzero1);
+$done(a);
