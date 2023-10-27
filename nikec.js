@@ -6,7 +6,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.mktview\.trade\.pricecoupon\.queryitem\/1\.0 url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/youpume.js
+^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.mktview\.trade\.pricecoupon\.queryitem\/1\.0 url script-response-body https://raw.githubusercontent.com/aninzero/qx/main/nikec.js
 
 [mitm]
 hostname = guide-acs.m.taobao.com
