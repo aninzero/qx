@@ -15,7 +15,6 @@ hostname = guide-acs.m.taobao.com
 
 
 var aninzero = JSON.parse($response.body);
-
 aninzero.data.model.priceCouponDetailDescVO.canBuy = "true";
 
 $done({ body: JSON.stringify(aninzero)});
