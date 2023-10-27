@@ -15,6 +15,7 @@ hostname = guide-acs.m.taobao.com
 
 
 var aninzero = JSON.parse($response.body);
+aninzero.data.model.priceCouponItemVO.starts = "2023-10-27 20:50:00";
 aninzero.data.model.priceCouponDetailDescVO.canBuy = "true";
 
 $done({ body: JSON.stringify(aninzero)});
