@@ -17,7 +17,7 @@ hostname = sg.joytunes.com
 
 var aninzero = JSON.parse($response.body);
 
-aninzero.accessTokenValid = true;
+aninzero.replace(/isPurchasingProfile":\w+/g,'isPurchasingProfile":true');
 aninzero.isPremium = true;
 aninzero.accountInfo.membershipInfo = {
       "membershipDescription" : "高级会员",
