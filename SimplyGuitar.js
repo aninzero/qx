@@ -18,7 +18,7 @@ hostname = sg.joytunes.com
 var aninzero = JSON.parse($response.body);
 
 aninzero.replace(/isPurchasingProfile":\w+/g,'isPurchasingProfile":true');
-aninzero.isPremium = true;
+aninzero.profilesList.isPremium = true;
 aninzero.accountInfo.membershipInfo = {
       "membershipDescription" : "高级会员",
       "familyIapID" : "com.joytunes.sg.subscription_onemonth_20_FamilyPlan_Individual_trial_bundle_family",
