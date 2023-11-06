@@ -3,7 +3,8 @@
 声明：学习交流使用
 **************************************
 [rewrite_local]
-^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-response-body https://gitee.com/jankins/main/raw/master/pillow.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-response-body https://raw.githubusercontent.com/aninzero/qx/main/photomator.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-response-body https://raw.githubusercontent.com/aninzero/qx/main/photomator.js
 
 [MITM]
 hostname = api.revenuecat.com
