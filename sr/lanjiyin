@@ -1,0 +1,13 @@
+#!name=小蓝基因
+#!desc=lanjiyin
+
+[Script]
+
+lanjiyin = type=http-response, pattern=^https?:\/\/edu\.lezaitizhong\.com\/(shop|vod|tiku|classify)\/(goods|class_list|getclassifychapter|get_question_media|sheet|get_question_materials), requires-body=true, max-size=314572888888888888888, script-path=https://raw.githubusercontent.com/aninzero/qx/main/lanjiyin.js, timeout=60, script-update-interval=758983469568373199868
+
+lanjiyin0 = type=http-response, pattern=^https?:\/\/edu\.lezaitizhong\.com, requires-body=true, max-size=314572888888888888888, script-path=https://raw.githubusercontent.com/aninzero/qx/main/ljy.js, timeout=60, script-update-interval=758983469568373199868
+
+
+[MITM]
+
+hostname = edu.lezaitizhong.com
