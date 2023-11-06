@@ -1,0 +1,14 @@
+#!name=StressWatch
+#!desc=解锁永久订阅
+
+[Script]
+
+StressWatch1 = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$), requires-body=true, max-size=3145728, script-path=https://gitee.com/aninzero/main/raw/master/solidwrite, timeout=60, script-update-interval=35475466335353654634
+
+StressWatch2 = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$), requires-body=false, max-size=3145728, script-path=https://gitee.com/aninzero/main/raw/master/solidwrite, timeout=60, script-update-interval=35475466335353654634
+
+
+
+[MITM]
+
+hostname = api.revenuecat.com
