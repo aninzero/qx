@@ -4,7 +4,8 @@
 声明：学习交流使用，请勿售卖用于非法用途
 **************************************
 [rewrite_local]
-^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-response-body https://gitee.com/jankins/main/raw/master/pillow.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-response-body https://raw.githubusercontent.com/aninzero/qx/main/pillow.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-response-body https://raw.githubusercontent.com/aninzero/qx/main/pillow.js
 
 [MITM]
 hostname = api.revenuecat.com
