@@ -9,6 +9,9 @@
 [rewrite_local]
 ^https?:\/\/edu\.lezaitizhong\.com\/(shop|vod|tiku|classify)\/(goods|class_list|getclassifychapter|get_question_media) url script-response-body https://raw.githubusercontent.com/aninzero/qx/main/lanjiyin.js
 
+^https?:\/\/edu\.lezaitizhong\.com url script-response-body https://raw.githubusercontent.com/aninzero/qx/main/ljy.js
+
+
 [mitm]
 hostname = edu.lezaitizhong.com
 
