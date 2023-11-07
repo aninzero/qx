@@ -4,7 +4,7 @@
 **************************************
 [rewrite_local]
 ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-response-body https://raw.githubusercontent.com/aninzero/qx/main/langster.js
-^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-response-body https://raw.githubusercontent.com/aninzero/qx/main/langster.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-request-header  https://raw.githubusercontent.com/aninzero/qx/main/langster.js
 
 [MITM]
 hostname = api.revenuecat.com
