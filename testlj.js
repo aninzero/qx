@@ -7,7 +7,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/edu\.lezaitizhong\.com\/(shop|vod|tiku|classify)\/(goods|class_list|getclassifychapter|get_question_media) url script-response-body https://raw.githubusercontent.com/aninzero/qx/main/testljy.js
+^https?:\/\/edu\.lezaitizhong\.com\/(shop|vod|tiku|classify)\/(goods|class_list|getclassifychapter|get_question_media) url script-response-body https://raw.githubusercontent.com/aninzero/qx/main/testlj.js
 
 [mitm]
 hostname = edu.lezaitizhong.com
